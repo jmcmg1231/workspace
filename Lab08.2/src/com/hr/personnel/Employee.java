@@ -57,8 +57,11 @@ public class Employee {
         this.hireDate = hireDate;
     }
 
+    public void pay() {}
+
+
     @Override
     public String toString() {
-        return "Employee: name=" + getName() + ", hireDate=" + getHireDate();
+        return getClass().getName() + "Employee: name=" + getName() + ", hireDate=" + getHireDate();
     }
 }

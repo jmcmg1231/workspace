@@ -15,11 +15,14 @@ public class HourlyEmployee extends Employee {
         this.hours = hours;
     }
 
+    public void pay() {
+        System.out.println(getName() + " is paid hourly " + (rate * hours));
+    }
+
     @Override
     public String toString() {
-        return "HourlyEmployee{" +
-                "name = " + getName() + " " +
-                "hireDate = " + getHireDate() + " " +
+
+        return super.toString() + "HourlyEmployee{" +
                 "rate = " + rate + " " +
                 ", hours = " + hours +
                 '}';

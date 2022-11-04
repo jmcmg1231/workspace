@@ -13,12 +13,15 @@ public class SalariedEmployee extends Employee {
         this.salary = salary;
     }
 
+    public void pay() {
+        System.out.println(getName() + "is paid salary " +salary);
+    }
+
     @Override
     public String toString() {
-        return "SalariedEmployee{" +
-                "name = " + getName() + " " +
-                "hireDate = " + getHireDate() + " " +
-                "salary = " + salary +
+
+        return super.toString() + "SalariedEmployee{" +
+                "salary = " + salary+
                 '}';
     }
 }
